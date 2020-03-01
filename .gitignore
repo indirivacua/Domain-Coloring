@@ -128,4 +128,4 @@ dmypy.json
 .pyre/
 
 # Misc
-*.tmp
+#*.tmp
