@@ -65,7 +65,7 @@ class Window(QWidget):
         #Warn user on their first time.
         if "True" in open(appctxt.get_resource("first.tmp")).read():
             Info("Time","The graphs take some time to generate. Be patient.\nYou can make it faster by lowering the smoothing factor or decreasing the resolution.")
-            with open(appctxt.get_resource("first"),'w') as f:
+            with open(appctxt.get_resource("first.tmp"),'w') as f:
                 f.write("False")
 
         funstr=self.fun.text()
